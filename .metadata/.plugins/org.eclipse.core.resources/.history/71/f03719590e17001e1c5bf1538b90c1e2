@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+<style type="text/css">
+	fieldset {
+		width: 300px;
+	}
+	#mydiv, #mydiv2{
+		width: 600px;
+		margin: auto;
+	}
+	label{
+		width: 80px;
+		height: 30px;
+		float: left;
+		linet-height: 30px;
+	}
+	input{
+		height: 30px;
+	}
+</style>
+<script type="text/javascript">
+	function send_go(f) {
+		// 자바 스크립트를 사용할 때 required가 실행되지 않는다.
+		// 그러므로 유효성 검사를 해야한다.
+		var s1 = f.s1.values;
+		if(s1 == ''){			
+			alert("수1을 입력하세요")
+			f.s1.focus();
+			return;
+		}
+		
+		var s2 = f.s2.values;
+		if(s2 == ''){			
+			alert("수2을 입력하세요")
+			f.s1.focus();
+			return;
+		}
+		// form에 action이 있으면 생략하고 없으면 코딩해야 된다.
+		f.action="/01_servlet/Ex07"
+		f.submit();
+	}
+
+</script>
+</head>
+<body>
+	<div id = "mydiv">
+		<form action= "/01_servlet/Ex07" method="get">
+			<fieldset>
+				<legend>계산기</legend>
+				<p><label for = "s1">수1 : </label>
+				<input type="number" name="s1" id="s1" required></p>
+				<p><label for = "s2">수2 : </label>
+				<input type="number" name="s2" id="s2" required></p>
+				<p><label for = "op">연산자 : </label>
+					<input type="radio" id = "op" value= "+">+
+					<input type="radio" id = "op" value= "-">-
+					<input type="radio" id = "op" value= "*">*
+					<input type="radio" id = "op" value= "/">/
+				</p>
+				<input type="submit" value="결과보기">
+			</fieldset>
+		</form>
+	</div>
+	<div id = "mydiv2">
+		<form method="get">
+			<fieldset>
+				<legend>계산기</legend>
+				<p><label for = "s1">수1 : </label>
+				<input type="number" name="s1" id="s1" required></p>
+				<p><label for = "s2">수2 : </label>
+				<input type="number" name="s2" id="s2" required></p>
+				<p><label for = "op">연산자 : </label>
+					<input type="radio" id = "op" value= "+">+
+					<input type="radio" id = "op" value= "-">-
+					<input type="radio" id = "op" value= "*">*
+					<input type="radio" id = "op" value= "/">/
+				</p>
+				<input type="button" value="결과보기" onclick="send_go(this.form)">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

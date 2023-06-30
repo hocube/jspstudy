@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+</head>
+<body>
+	<form action= "/01_servlet/Ex07" method="get"></form>
+	<p><label for = "su1">수1 : </label><input type="number" name="su1" id="su1" required></p>
+	<p><label for = "su2">수2 : </label><input type="number" name="su1" id="su1" required></p>
+	<input type="radio" id = "rdo1" name = "rdo1" value= "rdo1">+
+	<input type="radio" id = "rdo2" name = "rdo2" value= "rdo2">-
+	<input type="radio" id = "rdo3" name = "rdo3" value= "rdo3">*
+	<input type="radio" id = "rdo4" name = "rdo4" value= "rdo4">/
+	
+	<input type="submit" value="결과보기">
+</body>
+</html>
