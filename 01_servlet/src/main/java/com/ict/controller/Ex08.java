@@ -18,35 +18,40 @@ public class Ex08 extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 요청 한글 처리
 		request.setCharacterEncoding("utf-8");
 		
+		// 응답 한글 처리
 		response.setContentType("text/html; charset=utf-8");
 		
+		// 출력
 		PrintWriter out = response.getWriter();
 		
+		// 넘어온 파라미터 받기 (파라미터는 대부분 String, String[])
 		String name = request.getParameter("name");
-		int kor_Int = Integer.parseInt(request.getParameter("kor"));
-		int eng_Int = Integer.parseInt(request.getParameter("eng"));
-		int math_Int = Integer.parseInt(request.getParameter("math"));
+		int kor = Integer.parseInt(request.getParameter("kor"));
+		int eng = Integer.parseInt(request.getParameter("eng"));
+		int math = Integer.parseInt(request.getParameter("math"));
 		
-		int sum = kor_Int + eng_Int + math_Int;
-		int avg = sum / 3;
-		String hak;
+		int sum = kor + eng + math;
+		double avg = (int)(sum / 3.0*10)/10.0;
+		String hak = "";
 		if (avg>= 90) {
 			hak = "A학점";
 		}else if (avg>= 80) {
 			hak = "B학점";
 		}else if (avg>= 70) {
 			hak = "C학점";
-		}else if (avg>= 60) {
-				hak = "D학점";
 		}else {
 			hak = "F학점";
 		}
 		
-		out.println("<h2>" + name + "님의 총점 : " + sum + "</h2>");
-		out.println("<h2>" + name + "님의 평균 : " + avg + "</h2>");
-		out.println("<h2>" + name + "님의 학점 : " + hak + "</h2>");
+		out.println("<h2>성적보기</h2>");
+		out.println("<p>이름: " + name + "</p>");
+		out.println("<p>총정: " + sum + "</p>");
+		out.println("<p>평균: " + avg + "</p>");
+		out.println("<p>학점: " + hak + "</p>");
+		
 	}
 
 }
