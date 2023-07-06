@@ -13,7 +13,7 @@
 </style>
 <script type="text/javascript">
 	function save_go(f) {
-		f.action="02_jsp/GuestController";
+		f.action="/02_jsp/GuestController";
 		f.submit();
 	}
 </script>
