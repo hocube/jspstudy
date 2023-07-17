@@ -24,7 +24,7 @@
 			text-align: center;
 		}
 		div#wrap{ margin: 0 auto; }
-		div#log{float: right; margin-right: 100px}
+		div#log{float: right;}
     </style>
   </head>
   <body>

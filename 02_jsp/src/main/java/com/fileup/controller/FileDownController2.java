@@ -9,10 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.fileup.model.UpDownCommand;
+import com.fileup.model.UpDownCommand2;
 
-@WebServlet("/FileUpController")
-public class FileUpController extends HttpServlet {
+@WebServlet("/FileDownController2")
+public class FileDownController2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,10 +22,8 @@ public class FileUpController extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
 		PrintWriter out = response.getWriter();
-		String cmd = request.getParameter("cmd");
-			
-		UpDownCommand comm = new UpDownCommand();
-		String path = comm.exec(request, response);
-		request.getRequestDispatcher(path).forward(request, response);
+		
+		UpDownCommand2 comm = new UpDownCommand2();
+		comm.exec(request, response);
 	}
 }

@@ -10,6 +10,6 @@
 	<jsp:forward page="/MyController">
 		<jsp:param value="login" name="cmd"/>
 		<jsp:param value="ele002" name="category"/>
-	</jsp:forward>
+		</jsp:forward>
 </body>
 </html>
