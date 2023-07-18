@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 	function send_go(f) {
-		f.action="/jsp/FileUpController?cmd=fileup";
+		f.action="02_jsp/FileUpController?cmd=fileup";
 		f.submit();
 	}
 </script>

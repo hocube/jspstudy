@@ -5,7 +5,7 @@
 <%@page import="java.net.URLEncoder"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<% 
+    
 	request.setCharacterEncoding("utf-8");
     String path = request.getParameter("path");
     String f_name = request.getParameter("f_name");
@@ -49,19 +49,3 @@
     	}catch(Exception e2){
     	}
     }
-%>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

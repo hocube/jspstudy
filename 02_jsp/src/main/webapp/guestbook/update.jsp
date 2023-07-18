@@ -16,7 +16,7 @@
 		// 자바스크립트에서도 EL를 사용할 수 있다.
 		var k = "${vo.pwd}";
 		if(f.pwd.value == k){
-			f.action="/jsp/GuestController";
+			f.action="/02_jsp/GuestController";
 			f.submit();
 		}else{
 			alert('비밀번호가 틀립니다.');

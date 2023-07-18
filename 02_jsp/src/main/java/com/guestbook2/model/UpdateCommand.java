@@ -14,9 +14,9 @@ public class UpdateCommand implements Command{
 		if(vo != null) {
 			request.setAttribute("vo", vo);
 			
-			return "02_guestbook2/update.jsp";
+			return "guestbook2/update.jsp";
 		}else {
-			return "02_guestbook2/error.jsp";
+			return "guestbook2/error.jsp";
 		}
 	}
 }

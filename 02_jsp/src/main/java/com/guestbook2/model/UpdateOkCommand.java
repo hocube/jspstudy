@@ -37,11 +37,11 @@ public class UpdateOkCommand implements Command{
 			if(result>0) {
 				return "GuestBook2?cmd=onelist&idx="+vo.getIdx();
 			}else {
-				return "02_geustbook2/error.jsp";
+				return "geustbook2/error.jsp";
 			}
 			
 		} catch (Exception e) {
-			return "02_geustbook2/error.jsp";
+			return "geustbook2/error.jsp";
 		}
 	}
 }

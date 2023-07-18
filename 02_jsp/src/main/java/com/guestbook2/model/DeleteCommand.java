@@ -14,9 +14,9 @@ public class DeleteCommand implements Command{
 		
 		if(vo != null) {
 			request.setAttribute("vo", vo);
-			return "02_guestbook2/delete.jsp";
+			return "guestbook2/delete.jsp";
 		}else {
-			return "02_guestbook2/error.jsp";
+			return "guestbook2/error.jsp";
 		}
 	}
 }

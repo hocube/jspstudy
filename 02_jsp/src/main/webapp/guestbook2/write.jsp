@@ -13,7 +13,7 @@
 </style>
 <script type="text/javascript">
 	function save_go(f) {
-		f.action="/jsp/GuestBook2?cmd=write_ok";
+		f.action="/02_jsp/GuestBook2?cmd=write_ok";
 		f.submit();
 	}
 </script>
@@ -22,7 +22,7 @@
 	<div>
 		<h2>방명록 : 작성화면</h2>
 		<hr />
-		<p>[<a href="/jsp/GuestBook2?cmd=list">목록으로 이동</a>]</p>
+		<p>[<a href="/02_jsp/GuestBook2?cmd=list">목록으로 이동</a>]</p>
 		
 		 <!-- 파일 첨부하려면  -->
 		<form method="post" enctype="multipart/form-data" >

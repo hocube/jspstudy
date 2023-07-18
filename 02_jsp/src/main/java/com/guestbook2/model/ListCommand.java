@@ -14,6 +14,6 @@ public class ListCommand implements Command{
 	   // 전체 목록 가져오기
 		List<VO> list = DAO.getList();
 		request.setAttribute("list", list);
-		return "02_guestbook2/list.jsp";
+		return "guestbook2/list.jsp";
 	}
 }

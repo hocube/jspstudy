@@ -5,14 +5,14 @@
 <mapper namespace="shop">
 	<select id="login" parameterType="com.ict.db.MemberVO" resultType="com.ict.db.MemberVO">
 		select * from member01 where m_id=#{m_id} and m_pw=#{m_pw}
-	</select>
+	</select>	
 	
 	<select id="list" parameterType="String" resultType="com.ict.db.ShopVO">
 		select * from shop_t where category = #{category}
 	</select>
 	
 	<select id="oneList" parameterType="String" resultType="com.ict.db.ShopVO">
-		select * from shop_t where idx=#{idx}
+		select * from shop_t where idx = #{idx}
 	</select>
 	
 	<select id="cartList" parameterType="Map" resultType="com.ict.db.CartVO">
@@ -21,14 +21,29 @@
 	
 	<insert id="cartInsert" parameterType="com.ict.db.CartVO">
 		insert into cart(idx, p_num, p_name, p_price, p_su, m_id) 
-		values(cart_seq.nextval,#{p_num},#{p_name},#{p_price},1,#{m_id})
+		values(cart_seq.nextval, #{p_num}, #{p_name}, #{p_price}, 1, #{m_id})
 	</insert>
 	
 	<update id="cartUpdate" parameterType="com.ict.db.CartVO">
-		update cart set p_su = p_su + 1 where m_id = #{m_id} and p_num=#{p_num}
+		update cart set p_su = p_su + 1 where m_id=#{m_id} and p_num=#{p_num}
 	</update>
 	
 	<select id="cartAllList" parameterType="String" resultType="com.ict.db.CartVO">
-		select * from cart where m_id = #{m_id};
+		select * from cart where m_id = #{m_id}
 	</select>
+	
+	<update id="cartCountUpdate" parameterType="com.ict.db.CartVO">
+		update cart set p_su = #{p_su} where m_id = #{m_id} and p_num = #{p_num}
+	</update>
+	
+	<delete id="cartDel" parameterType="String">
+		delete from cart where idx = #{idx}
+	</delete>
+	
+	<insert id="productInsert" parameterType="com.ict.db.ShopVO">
+		insert into shop_t(idx, category, p_num, p_name, p_company, 
+		p_price, p_saleprice, p_image_s, p_image_l, p_content, p_date)
+		values(shop_seq.nextVal, #{category}, #{p_num}, #{p_name}, #{p_company}, 
+		#{p_price}, #{p_saleprice}, #{p_image_s}, #{p_image_l}, #{p_content}, sysdate)
+	</insert>
 </mapper>

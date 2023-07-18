@@ -38,7 +38,7 @@
 	     			  	<tr>
 	     			  		<td>${vs.count }</td>
 	     			  		<td>${k.name }</td>
-	     			  		<td><a href="/jsp/GuestBook2?cmd=onelist&idx=${k.idx}">${k.subject }</a></td>
+	     			  		<td><a href="/02_jsp/GuestBook2?cmd=onelist&idx=${k.idx}">${k.subject }</a></td>
 	     			  		<td>${k.regdate.substring(0,10)}</td>
 	     			  	</tr>
 	     			  </c:forEach> 

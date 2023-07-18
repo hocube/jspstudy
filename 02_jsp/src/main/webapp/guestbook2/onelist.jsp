@@ -27,7 +27,7 @@
 	<div>
 		<h2>방명록 : 상세보기 화면</h2>
 		<hr />
-		<p>[<a href="/jsp/GuestBook2?cmd=list">목록으로 이동</a>]</p>
+		<p>[<a href="/02_jsp/GuestBook2?cmd=list">목록으로 이동</a>]</p>
 		
 		 <!-- 파일 첨부하려면  -->
 		<form method="post">
@@ -60,7 +60,7 @@
 							--%>
 							<td>
 							<%-- 다운로드 --%>
-								<a href="/jsp/DownController?path=upload&f_name=${vo.f_name }">
+								<a href="/02_jsp/DownController?path=upload&f_name=${vo.f_name }">
 									<img src="upload/${vo.f_name}" style="width: 80px;">
 								</a> 	
 							</td>

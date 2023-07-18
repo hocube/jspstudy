@@ -37,11 +37,11 @@ public class WriteOkCommand implements Command{
 				return "GuestBook2?cmd=list";
 			}else {
 				// 오류처리 페이지로 넘기자.
-				return "02_guestbook2/error.jsp";
+				return "guestbook2/error.jsp";
 			}
 		} catch (Exception e) {
 			// 오류처리 페이지로 넘기자.
-			return "02_guestbook2/error.jsp";
+			return "guestbook2/error.jsp";
 		}
 	}
 }

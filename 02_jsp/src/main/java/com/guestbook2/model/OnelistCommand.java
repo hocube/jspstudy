@@ -13,9 +13,9 @@ public class OnelistCommand implements Command{
 			VO vo = DAO.getOneList(idx);
 			if(vo != null) {
 				request.setAttribute("vo", vo);
-				return "02_guestbook2/onelist.jsp";
+				return "guestbook2/onelist.jsp";
 			}else {
-				return "02_guestbook2/error.jsp";
+				return "guestbook2/error.jsp";
 			}
 		}	
 }

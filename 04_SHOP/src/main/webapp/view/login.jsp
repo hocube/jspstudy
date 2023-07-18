@@ -11,15 +11,15 @@
 	width: 500px;
 	border: 1px solid gray;
 	padding: 20px;
-	}
-	input{
+}
+input{
 	padding: 10px;
 	margin: 10px;
-	}
+}
 </style>
 <script type="text/javascript">
 	function login_go(f) {
-		// 유효성 검사
+		// 유효성 검사 
 		f.action="/MyController?cmd=loginok";
 		f.submit();
 	}
@@ -46,15 +46,15 @@
 						<th>패스워드</th>
 						<td><input type="password" name="m_pw"></td>
 					</tr>
-					</tbody>
-					<tfoot>
-						<tr style="text-align: center;">
-							<td colspan="2">
-								<input type="button" value="로그인" onclick="login_go(this.form)">
-								<input type="button" value="회원가입" onclick="join_go(this.form)">
-							</td>
-						</tr>
-					</tfoot>
+				</tbody>
+				<tfoot>
+					<tr style="text-align: center;">
+						<td colspan="2">
+							<input type="button" value="로그인" onclick="login_go(this.form)">
+							<input type="button" value="회원가입" onclick="join_go(this.form)">
+						</td>
+					</tr>
+				</tfoot>
 			</table>
 		</form>
 	</div>
