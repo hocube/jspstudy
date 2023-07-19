@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.jsp.model.Ex07_Model"/>
     <fullyQualifiedTypeName name="com.jsp.model.Ex10_1_Model"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -27,13 +26,15 @@
     <fullyQualifiedTypeName name="com.guestbook2.model.Command"/>
     <fullyQualifiedTypeName name="com.guestbook2.db.DAO"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
-    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
-    <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
     <fullyQualifiedTypeName name="com.ict.db.MemberVO"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="com.ict.db.CartVO"/>
-    <fullyQualifiedTypeName name="com.ict.model.Command"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.ict.db.DAO"/>
+    <fullyQualifiedTypeName name="com.ict.db.CartVO"/>
+    <fullyQualifiedTypeName name="com.ict.model.Command"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
+    <fullyQualifiedTypeName name="com.ict.db.ShopVO"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

@@ -13,9 +13,9 @@
 </head>
 <body>
   
-	<%-- <jsp:forward page="${pageContext.request.contextPath}/GuestBook2">
+	<%--<jsp:forward page="${pageContext.request.contextPath}/GuestBook2">
 		<jsp:param value="list" name="cmd"/>
-	</jsp:forward> --%>
+	</jsp:forward>--%>
 	 
 	 <button onclick="list_go()">리스트</button>
 </body>
