@@ -128,32 +128,33 @@
 			});
 		});
 		// 버튼5
-		$("#btn5").on("click", function() { 
+		$("#btn5").on("click", function() {
 			$("#tbody").empty();
 			$.ajax({
-				url: "/MyController5",
-				dataType: "text",
-				method: "get",
+				url:"/MyController5",
+				dataType:"text",
+				method:"get",
 				success: function(data) {
-					// console.log(data);
-					$("#tb").css("background", "yellow");
-					var tbody = "";
-					var rows = data.split("/");
-						for ( var k in rows) {
-						tbody += "<tr>";
+					$("#tb").css("background","green")
+					var tbody="";
+				    var rows = data.split("/");
+				    	for ( var k in rows) {
+					    	tbody +="<tr>";
 							var cols = rows[k].split(",");
 							for ( var k2 in cols) {
-								tbody += "</td>" + cols[k2]+"</td>";
+								tbody += "<td>"+cols[k2]+"</td>";
 							}
-						tbody += "</tr>";
+					    	tbody +="</tr>";
 						}
+					
 					$("#tbody").append(tbody);
 				},
-				error: function() {
+				error:function(){
+					
 				}
 			});
 		});
-	});
+	  });
 </script>
 </head>
 <body>

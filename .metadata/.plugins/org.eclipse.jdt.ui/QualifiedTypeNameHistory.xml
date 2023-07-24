@@ -30,11 +30,12 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.ict.db.DAO"/>
     <fullyQualifiedTypeName name="com.ict.db.CartVO"/>
-    <fullyQualifiedTypeName name="com.ict.model.Command"/>
     <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
     <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
     <fullyQualifiedTypeName name="com.ict.db.ShopVO"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="com.ict.model.MyModel01"/>
+    <fullyQualifiedTypeName name="com.ict.model.Command"/>
 </qualifiedTypeNameHistroy>
