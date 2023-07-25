@@ -6,6 +6,7 @@
 		<item value="Apache Tomcat v9.0"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\tomcat-9\webapps\05_jQuery_Ajax.war"/>
 		<item value="C:\tomcat-9\03_BBS.war"/>
 	</list>
 </section>
